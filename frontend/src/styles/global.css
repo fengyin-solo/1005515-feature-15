@@ -35,3 +35,20 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+.panel h3 { margin: 0 0 10px; font-size: 14px; }
+.form-grid { display: flex; flex-wrap: wrap; gap: 10px 16px; }
+.form-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.form-grid input, .form-grid select, .filter-item input, .filter-item select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.check-group { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 4px; }
+.check-title { font-size: 12px; color: var(--muted); }
+.check-item { display: flex; align-items: center; gap: 4px; font-size: 13px; color: #1f2937; }
+.panel-hint { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+.panel-actions { display: flex; gap: 8px; margin-top: 10px; }
+.diagnosis { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 8px 12px; font-size: 13px; color: #9a3412; margin-bottom: 12px; }
+.diagnosis p { margin: 4px 0 0; }
+.selection-bar { display: flex; gap: 10px; align-items: center; font-size: 13px; margin: 0 0 8px; }
+.pager { display: flex; gap: 6px; align-items: center; }
+.btn.current { border-color: var(--brand); color: var(--brand); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ok-text { color: #067647; font-size: 13px; margin: 0 0 10px; }
