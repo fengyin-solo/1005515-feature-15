@@ -35,3 +35,47 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 条件搜索面板 */
+.filter-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.filter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px 14px; }
+.filter-field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.filter-field input, .filter-field select { font-size: 13px; color: #1f2937; }
+.filter-checks { border: none; padding: 0; margin: 0; }
+.filter-checks legend { padding: 0; margin-bottom: 4px; }
+.check-pill { display: inline-flex; align-items: center; gap: 4px; color: #1f2937; font-size: 12px; background: #f1f5f9; border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; cursor: pointer; }
+.filter-actions { display: flex; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.filter-tip { font-size: 12px; color: var(--muted); }
+
+/* 命中诊断：逐道关卡 */
+.check-trace { list-style: none; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+.trace-item { display: flex; flex-direction: column; gap: 2px; font-size: 12px; border: 1px solid var(--border); border-left-width: 3px; border-radius: 6px; background: #fff; padding: 6px 10px; min-width: 160px; }
+.trace-item.hit { border-left-color: #16a34a; }
+.trace-item.blocked { border-left-color: #d92d20; background: #fef3f2; }
+.trace-label { font-weight: 600; color: #1f2937; }
+.trace-detail { color: var(--muted); }
+
+/* 分页与状态 */
+.page-foot--wrap { flex-wrap: wrap; gap: 8px; align-items: center; }
+.pager { display: flex; gap: 4px; flex-wrap: wrap; }
+.pager .btn { padding: 3px 10px; }
+.pager .btn:disabled { opacity: .45; cursor: not-allowed; }
+.status-tag { display: inline-block; border-radius: 999px; padding: 1px 10px; font-size: 12px; }
+.status-pending { background: #e2e8f0; color: #475569; }
+.status-running { background: #dbeafe; color: #1d4ed8; }
+.status-done { background: #dcfce7; color: #15803d; }
+.status-stop { background: #fee2e2; color: #b91c1c; }
+.muted-text { color: var(--muted); font-size: 12px; }
+.success-text { color: #15803d; }
+
+/* 登记弹窗 */
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, .45); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
+.modal-card { background: #fff; border-radius: 10px; width: min(760px, 100%); max-height: 90vh; overflow: auto; padding: 16px 18px; }
+.modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.modal-head h3 { margin: 0; font-size: 16px; }
+.modal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 14px; }
+.modal-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.modal-grid input, .modal-grid select { font-size: 13px; color: #1f2937; }
+.modal-error { margin: 10px 0 0; }
+.modal-foot { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+input, select { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; background: #fff; }
